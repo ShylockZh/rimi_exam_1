@@ -1,0 +1,279 @@
+/***********************************************/
+/*all*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: '微软雅黑';
+}
+.wrap{
+	width: 60%;
+	margin: 0 auto;
+}
+.clearfix:after{
+	content: ' ';
+	display: block;
+	clear:both;
+}
+ul{
+	list-style: none;
+}
+ul li{
+	float: left;
+}
+
+
+/***********************************************/
+/*header*/
+header {
+	width: 100%;
+	text-align: right;
+	background-color: #000;
+	color: #fff;
+	height: 40px;
+	font-size: 15px;
+	line-height: 40px;
+	position: relative;
+}
+header .wrap span{
+	color: green;
+}
+
+img.logo{
+	position: absolute;
+	top: 0;
+	left: 381px;
+	z-index: 10;
+}
+
+/***********************************************/
+/*nav*/
+nav{
+	width: 100%;
+	height: 70px;
+	background: url(../images/bg.png);
+}
+nav .wrap ul{
+	float: right;
+}
+nav .wrap ul li{
+	width: 100px;
+	padding: 0 20px;
+	line-height: 70px;
+	text-align: center;
+	cursor: pointer;
+}
+nav .wrap ul li.focus{
+	color: green;
+}
+
+/***********************************************/
+/*banner*/
+.banner{
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+	position: relative;
+}
+.banner img{
+	width: 100%;
+}
+.arror-left,.arror-right{
+	width: 50px;
+	height: 30px;
+	top: 50%;
+	margin-top: -15px;
+	cursor: pointer;
+}
+.arror-left{
+	background:url(../images/button1.png) no-repeat;
+	position: absolute;
+	left: 0;
+}
+.arror-right{
+	background:url(../images/button2.png);
+	position: absolute;
+	right: 0;
+}
+
+
+/***********************************************/
+/*welcome*/
+.welcome{
+	width: 100%;
+	height: 400px;
+	background-color: #333;
+}
+.welcome .wrap{
+	position: relative;
+}
+.welcome img{
+	width: 360px;
+	height: 360px;
+	border-radius: 50%;
+	margin: 20px;
+}
+.welcome .container{
+	width: 700px;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	margin-top: -79px;
+}
+.welcome .container .title{
+	font-size:35px;
+	margin: 20px 0 ;
+}
+.welcome .container .words{
+	font-size: 20px;
+}
+
+
+/***********************************************/
+/*introduce*/
+.introduce{
+	width: 100%;
+	/*height: 600px;*/
+	background: url(../images/bg.png);
+	padding: 30px 0;
+}
+.introduce .about{
+	margin-bottom: 30px;
+}
+.introduce .about .about-title,
+.introduce .latest .latest-title,
+.service .service-title{
+	text-align: center;
+	font-size: 35px;
+	color: brown;
+	margin-bottom: 30px;
+}
+.introduce .about .about-content{
+	text-align: center;
+}
+.introduce .latest .latest-pics{
+	margin: 0 auto;
+}
+.introduce .latest .latest-pics img{
+	width: 30%;
+	margin: 15px;
+}
+
+
+
+/***********************************************/
+/*tip*/
+.tip{
+	width: 100%;
+	height: 450px;
+	background: url(../images/quote.jpg) no-repeat;
+	background-size: cover;
+}
+.tip .tip-content{
+	width: 50%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.1);
+	position: relative;
+}
+.tip .tip-content .quote{
+	width: 400px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: #fff;
+	font-size: 20px;
+	line-height: 2em;
+	margin-top: -80px;
+	margin-left: -200px;
+	letter-spacing: 2px;
+}
+
+
+/***********************************************/
+/*service*/
+.service{
+	width: 100%;
+	padding: 30px 0;
+	background: url(../images/bg.png);
+}
+.service .wrap{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.service .item{
+	width: 250px;
+}
+.service .item .item-title{
+	font-size: 35px;
+	color: brown;
+	margin-bottom: 5px;
+}
+.service .item .item-title span{
+	font-size: 20px;
+}
+.service .item img{
+	width: 250px;
+}
+.service .item .intro{
+	font-size: 15px;
+	line-height: 2em;
+	margin: 7px 0;
+}
+.service .item .more{
+	width: 80px;
+	border-top: 2px solid brown;
+	font-size: 20px;
+}
+
+
+/***********************************************/
+/*footer*/
+footer{
+	width: 100%;
+	/*height: 500px;*/
+	background-color: #333;
+	padding: 40px 0;
+}
+footer .wrap{
+	display: flex;
+	justify-content: space-around;
+}
+footer .item{
+	width: 250px;
+}
+footer .item dt{
+	color: #fff;
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+footer .item dd{
+	line-height: 1.5em;
+	color: #666;
+}
+footer .item input:nth-child(1){
+	width: 188px;
+	outline: none;
+	background-color: #333;
+	height: 40px;
+	border: 1px solid #fff;
+	color: #fff;
+	padding-left: 1em;
+}
+footer .item input:nth-child(2){
+	width: 45px;
+	outline: none;
+	background-color: #333;
+	height: 42px;
+	border: 1px solid #fff;
+	color: #fff;
+	margin-left: -6px;
+}
+ input::-webkit-input-placeholder{
+            color:#fff;
+        }
+footer .copy{
+	color: #666;
+	margin: 40px auto 0;
+	text-align: center;
+}
